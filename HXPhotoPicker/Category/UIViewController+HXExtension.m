@@ -244,7 +244,7 @@
 }
 
 - (HXCustomNavigationController *)hx_customNavigationController {
-    if ([NSStringFromClass([self.navigationController class]) isEqualToString:@"HXCustomNavigationController"]) {
+    if (self.navigationController && [self.navigationController isKindOfClass:HXCustomNavigationController.class]) {
         return (HXCustomNavigationController *)self.navigationController;
     }
     return nil;
