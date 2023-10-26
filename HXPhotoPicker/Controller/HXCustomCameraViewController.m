@@ -804,7 +804,7 @@ CLLocationManagerDelegate
         _bottomView.endTranscribe = ^(BOOL isAnimation) {
             if (![weakSelf.cameraController isRecording]) {
                 [weakSelf stopTimer];
-                weakSelf.cancelBtn.selected = NO;
+                weakSelf.cancelBtn.selected = YES;
                 weakSelf.cancelBtn.hx_w = 50;
                 weakSelf.changeCameraBtn.hidden = NO;
             }else {
